@@ -15,5 +15,5 @@ BACKUP_NAME=
 
 **RESTORATION**
 
-gzip -k -d (FILE_NAME).sql.gz
+gzip -k -d (FILE_NAME).sql.gz \n
 pg_restore -d -v (CONNECTION_STRING) TAR_FILE_NAME.tar
