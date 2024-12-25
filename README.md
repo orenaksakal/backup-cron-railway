@@ -13,7 +13,7 @@ BACKUP_DATABASE_URL=${{database.DATABASE_URL}}\
 BACKUP_NAME=
 
 
-** RESTORATION **
+**RESTORATION**
 
 gzip -k -d <filename>.sql.gz
 pg_restore -d -v <connection string> <new-tar-filename>.tar
