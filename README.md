@@ -11,3 +11,9 @@ AWS_S3_REGION=\
 AWS_SECRET_ACCESS_KEY=\
 BACKUP_DATABASE_URL=${{database.DATABASE_URL}}\
 BACKUP_NAME=
+
+
+** RESTORATION **
+
+gzip -k -d <filename>.sql.gz
+pg_restore -d -v <connection string> <new-tar-filename>.tar
